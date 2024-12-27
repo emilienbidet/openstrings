@@ -1,6 +1,11 @@
 {
 	"extends": "@openstrings/typescript-config/nextjs.json",
 	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+		  "@/*": ["./src/*"],
+		  "@openstrings/ui/*": ["../../packages/ui/src/*"],
+		},
 		"plugins": [
 			{
 				"name": "next"
@@ -10,6 +15,7 @@
 	"include": [
 		"**/*.ts",
 		"**/*.tsx",
+		"**/*.woff",
 		"next-env.d.ts",
 		"next.config.js",
 		".next/types/**/*.ts"

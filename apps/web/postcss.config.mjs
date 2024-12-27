@@ -1,0 +1,1 @@
+export { default } from "@openstrings/ui/postcss.config";
